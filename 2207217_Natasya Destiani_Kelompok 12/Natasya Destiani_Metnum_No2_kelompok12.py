@@ -5,8 +5,14 @@ No. 2
 
 import numpy as np
 import matplotlib.pyplot as plt
+import sympy as sy
+
+
+print (1e-6)
 
 def my_bisection(func, a, b, tol=1e-6, max_iterations=100):
+    if np.sign(func(a))==np.sign(func(b)):
+      raise Exception('Tidak ada akar')
     iterations = 0
     results = []  # Menyimpan hasil iterasi untuk grafik
 
@@ -44,12 +50,14 @@ def plot_bisection_results(func, a, b, tol=1e-6, max_iterations=100):
     plt.grid(True)
     plt.show()
 
-if __name__ == "__main__":
+if _name_ == "__main__":
     func_str = input("Masukkan fungsi (gunakan 'x' sebagai variabel): ")
-    func = lambda x: eval(func_str)
     a = float(input("Masukkan batas bawah: "))
     b = float(input("Masukkan batas atas: "))
     max_iterations = int(input("Masukkan jumlah maksimal iterasi: "))
     tol = float(input("Masukkan toleransi galat: "))
+    x = sy.symbols('x')
+    f = sy.sympify (func_str)
+    f = sy.lambdify(x,func_str)
 
-    plot_bisection_results(func, a, b, tol, max_iterations)
+    plot_bisection_results(f, a, b, tol, max_iterations)
