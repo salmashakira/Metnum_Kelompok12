@@ -1,5 +1,6 @@
 '''
 METNUM Kelompok 12
+Metode Bagi 2
 No. 1
 b. f(x) = e^x - x
 '''
