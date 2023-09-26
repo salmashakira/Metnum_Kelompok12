@@ -10,6 +10,8 @@ Inputan:
 Masukkan Tebakan Awal : 1.0
 Masukkan Toleransi Error : 1e-6
 Masukkan Jumlah Iterasi : 100
+
+modifikasi 2
 '''
  
 # Mendefinisikan fungsi f(x)
