@@ -1,6 +1,6 @@
 '''
-Nama : Natasya Destiani
-NIM : 2207217
+Nama : Citra Ayu Rahmawati
+NIM : 2205521
 Kelas : Pendidikan Ilmu Komputer A
 Newton Rapshon
 '''
