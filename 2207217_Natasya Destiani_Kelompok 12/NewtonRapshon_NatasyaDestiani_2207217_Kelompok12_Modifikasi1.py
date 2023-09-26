@@ -3,6 +3,7 @@ Nama : Natasya Destiani
 NIM : 2207217
 Kelas : Pendidikan Ilmu Komputer A
 Newton Rapshon
+Modifikasi 1
 '''
 
 # Fungsi Newton-Raphson untuk mencari akar suatu fungsi
